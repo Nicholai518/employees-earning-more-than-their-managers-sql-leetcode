@@ -1,0 +1,29 @@
+1)
+SELECT
+a.name AS Employee
+FROM Employee AS a JOIN Employee As b
+on a.ManagerId = b.Id
+and a.salary > b.salary
+
+
+2)
+SELECT
+    a.Name AS 'Employee'
+FROM
+    Employee AS a,
+    Employee AS b
+WHERE
+    a.ManagerId = b.Id
+        AND a.Salary > b.Salary
+;
+
+
+3)
+SELECT
+    a.name AS Employee
+FROM Employee AS a JOIN Employee AS b
+    ON a.ManagerId = b.Id
+    AND a.salary > b.salary
+;
+
+
